@@ -32,6 +32,12 @@ header {
     object-fit: contain;
     position: absolute;
     left: 30px;
+    border-radius: 10%;
+}
+
+.project-logo {
+    width: 200px;
+    height: 200px;
 }
 
 h1 {
@@ -72,13 +78,13 @@ main {
     font-size: 1.8rem;
 }
 
-.svsky-link {
-    padding-top: 10px;
+.project-link {
     padding-right: 10px;
     font-size: 14px;
     color: #00bcd4;
     text-decoration: none;
     text-align: right;
+    padding-bottom: 5px;
 }
 
 .features {
