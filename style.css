@@ -1,0 +1,190 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #0d1117;
+    color: #c9d1d9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+    background: #161b22;
+    padding: 15px 30px;
+    border-bottom: 1px solid #30363d;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    position: absolute;
+    left: 30px;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+
+/* Main Layout */
+main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Sections */
+.projects {
+    flex: 1;
+    background: #161b22;
+    border-right: 1px solid #30363d;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.project {
+    padding: 8px;
+    background: #21262d;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.project h7 {
+    font-size: 1.8rem;
+}
+
+.svsky-link {
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #00bcd4;
+    text-decoration: none;
+    text-align: right;
+}
+
+.features {
+    flex: 3;
+    background: #0d1117;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Titles */
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* List Containers */
+ul {
+    list-style: none;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Scrollable Lists */
+#project-list, #features-list {
+    overflow-y: auto;
+    flex-grow: 1;
+    max-height: 530px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Features List Items */
+#features-list li {
+    padding: 8px;
+    background: #21262d;
+    border-radius: 5px;
+}
+
+/* Releases Download Buttons */
+.download-button {
+    background: #21262d;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s, color 0.3s;
+    font-size: 1rem;
+}
+
+.download-button:hover {
+    background: #00bcd4;
+    color: #0d1117;
+    border-color: #00acc1;
+}
+
+/* Footer */
+footer {
+    background: #161b22;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #30363d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#discord-button {
+    background: #00bcd4;
+    color: #0d1117;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#discord-button:hover {
+    background: #00acc1;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #8b949e;
+}
+
+/* Custom Scrollbar */
+#project-list::-webkit-scrollbar,
+#features-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#project-list::-webkit-scrollbar-thumb,
+#features-list::-webkit-scrollbar-thumb {
+    background-color: #00bcd4;
+    border-radius: 4px;
+}
+
+#project-list::-webkit-scrollbar-track,
+#features-list::-webkit-scrollbar-track {
+    background: #161b22;
+}
